@@ -1,0 +1,73 @@
+body
+{
+    background-color: rgb(24, 231, 169);
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    color: white;
+    font-family: 'Secular One', sans-serif;
+    font-size: 30px;
+    font-size: 5vw;
+    text-align: center;
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+#container
+{
+    height: 8vh;
+    padding-top: 45vh;
+    padding-bottom: 40vh;
+}
+p
+{
+    opacity: 0;
+    margin: 0;
+    display: inline-block;
+}
+.word
+{
+    opacity: 1;
+    animation: slideInUp, fadein;
+    animation-duration: 1s;
+}
+#one
+{
+animation-delay: 0.25s;
+}
+#two
+{
+animation-delay: 0.5s;
+}
+#three
+{
+animation-delay: 0.75s;
+}
+
+@keyframes fadein
+{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+button
+{
+    border: solid;
+    border-color: white;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0);
+    font-family: "Roboto Mono Medium";
+    font-size: 25px;
+    color: white;
+    padding: 1vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh
+}
+footer
+{
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-size: 12px
+}
