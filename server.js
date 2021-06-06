@@ -5,12 +5,12 @@ const app = express();
 app.use(express.json());
 app.use(express.static("public"));
 const server = http.createServer(app);
-const port = 80;
+const port = process.env.PORT || 8080;
 server.listen(port);
 console.debug('Server listening on ' + port);
 // DB Setup
 const MongoClient = require('mongodb').MongoClient
-const connectionString = 'mongodb://localhost:27017/'
+const connectionString = process.env.MONGO || 'mongodb://localhost:27017/'
 // Initialized variables
 name_results = []
 village_results = []
